@@ -1,0 +1,20 @@
+hextool
+hex <-> bin
+
+=== Hex format ===
+/* This is 
+   multi line 
+   comment */
+// And this is one line comment
+
+\C\h\a\r\a\c\t\e\r\ \w\i\t\h\ \b\a\c\k\s\l\a\s\h
+/* will be output literally -> "Character with backslash" */
+
+Two hex char convert to binary
+
+=== Sample Usage ===
+$ echo "DEADBEAF 00 00 00 00 \D\E\A\D\B\E\A\F" | hex2bin  | bin2hex 
+/* 0000 */ de ad be af 00 00 00 00  44 45 41 44 42 45 41 46 // ........DEADBEAF
+/* 0010 */
+   
+
